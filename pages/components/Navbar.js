@@ -13,7 +13,7 @@ import Hamburger from "../assets/hamburger.png";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <AppBar
@@ -129,79 +129,84 @@ const Navbar = () => {
           ) : (
             <>
               <AiOutlineMinus style={{ fontSize: "32px" }} />
-              <Box
-                sx={{
-                  backgroundColor: "#28293E",
-                  height: "100vh",
-                  position: "absolute",
-                  right: "-30px",
-                  top: "40px",
-                  padding: "0px 60px",
-                }}
-              >
-                <List>
-                  <ListItem>
-                    <ListItemText
-                      sx={{
-                        fontSize: "16px",
-                        color: "white",
-                        textAlign: "center",
-                        marginTop: "20px",
-                      }}
-                      primary="About"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      sx={{
-                        fontSize: "16px",
-                        textAlign: "center",
-                        color: "white",
-                        marginTop: "20px",
-                      }}
-                      primary="Services"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      sx={{
-                        fontSize: "16px",
-                        color: "white",
-                        textAlign: "center",
-                        marginTop: "20px",
-                      }}
-                      primary="Pricing"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      sx={{
-                        fontSize: "16px",
-                        color: "white",
-                        textAlign: "center",
-                        marginTop: "20px",
-                      }}
-                      primary="Blog"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      sx={{
-                        fontSize: "16px",
-                        color: "white",
-                        textAlign: "center",
-                        marginTop: "20px",
-                        fontWeight: "600",
-                        padding: "10px 10px",
-                        border: " 1px solid rgba(255, 255, 255, 0.295743);",
-                        borderRadius: "6px",
-                      }}
-                      primary="Contact"
-                    />
-                  </ListItem>
-                </List>
-              </Box>
             </>
+          )}
+        </Box>
+        <Box>
+          {!isOpen && (
+            <Box
+              sx={{
+                backgroundColor: "#28293E",
+                height: "100vh",
+                position: "absolute",
+                right: "-30px",
+                top: "40px",
+                padding: "0px 60px",
+                marginTop: "20px",
+              }}
+            >
+              <List>
+                <ListItem>
+                  <ListItemText
+                    sx={{
+                      fontSize: "16px",
+                      color: "white",
+                      textAlign: "center",
+                      marginTop: "20px",
+                    }}
+                    primary="About"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    sx={{
+                      fontSize: "16px",
+                      textAlign: "center",
+                      color: "white",
+                      marginTop: "20px",
+                    }}
+                    primary="Services"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    sx={{
+                      fontSize: "16px",
+                      color: "white",
+                      textAlign: "center",
+                      marginTop: "20px",
+                    }}
+                    primary="Pricing"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    sx={{
+                      fontSize: "16px",
+                      color: "white",
+                      textAlign: "center",
+                      marginTop: "20px",
+                    }}
+                    primary="Blog"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    sx={{
+                      fontSize: "16px",
+                      color: "white",
+                      textAlign: "center",
+                      marginTop: "20px",
+                      fontWeight: "600",
+                      padding: "10px 10px",
+                      border: " 1px solid rgba(255, 255, 255, 0.295743);",
+                      borderRadius: "6px",
+                    }}
+                    primary="Contact"
+                  />
+                </ListItem>
+              </List>
+            </Box>
           )}
         </Box>
       </Container>
