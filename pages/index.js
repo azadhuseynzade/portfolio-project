@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Section from "./components/Section";
+import ModernStudio from "./components/ModernStudio";
 export default function Home() {
   return (
     <div>
-      <Section />
+      <ModernStudio />
     </div>
   );
 }

@@ -1,0 +1,73 @@
+.mainModernDiv {
+  margin-top: 78px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #28293e;
+  border-top: 1px solid #28293e;
+  padding-bottom: 50px;
+}
+.firstBox {
+  max-width: 580px;
+  position: relative;
+  z-index: 100;
+}
+.modernTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ef6d58;
+}
+.dreamText {
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+.agencyProvides {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.64);
+  margin-top: 10px;
+}
+.howWorkBtn {
+  width: 154px;
+  padding: 10px 0px;
+  background-color: #ef6d58;
+  color: white;
+  font-weight: 900;
+  font-size: 14px;
+}
+.contactBtn {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+.metaSide {
+  display: flex;
+  padding-top: 100px;
+}
+.metaImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.puttext {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+}
+.incText {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.star {
+  position: absolute;
+  top: 0px;
+  bottom: 30px;
+  right: 120px;
+  z-index: -10;
+}
+
+.secondBox {
+  display: flex;
+}
