@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import styles from "../../styles/Navbar.module.css";
-import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  AppBar,
+  Container,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 import Logo from "../assets/logo.png";
-import { Typography } from "@mui/material";
-import Hamburger from "../assets/hamburger.png";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
 const Navbar = () => {
