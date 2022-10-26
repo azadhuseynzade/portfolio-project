@@ -145,6 +145,7 @@ const Navbar = () => {
                 padding: "0px 60px",
                 marginTop: "20px",
                 borderLeft: "1px solid white",
+                zIndex: "100",
               }}
             >
               <List>

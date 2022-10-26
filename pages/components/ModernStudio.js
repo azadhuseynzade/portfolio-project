@@ -19,22 +19,37 @@ const ModernStudio = () => {
           backgroundColor: "#28293E",
           display: "flex",
           justifyContent: "center",
+
           flexDirection: {
             xs: "column-reverse",
+            md: "row",
           },
-          maxWidth: "1100px",
+          maxWidth: "1150px",
           margin: "0 auto",
         }}
       >
-        <Box>
-          <Typography sx={{ fontSize: "16px", color: "#EF6D58;" }} variant="h5">
+        <Box sx={{ position: "relative", zIndex: "50" }}>
+          <Typography
+            sx={{
+              fontSize: "16px",
+              color: "#EF6D58;",
+
+              paddingLeft: {
+                xs: "20px",
+              },
+            }}
+            variant="h5"
+          >
             Modern Studio
           </Typography>
           <Typography
             sx={{
               fontSize: {
-                xs: "40px",
+                xs: "45px",
                 md: "72px",
+              },
+              padding: {
+                xs: "0px 0px 0px 20px",
               },
               color: "white",
               fontWeight: "900",
@@ -44,22 +59,52 @@ const ModernStudio = () => {
             We’re Help
             <br /> To Build Your Dream Project
           </Typography>
+          <Box
+            sx={{
+              position: "absolute",
+              top: "0px",
+              left: "330px",
+              zIndex: "-100",
+              display: {
+                xs: "none",
+                md: "block",
+              },
+            }}
+          >
+            <Image src={StarImg} width={148} height={148} alt="starImg" />
+          </Box>
 
           <Typography
             sx={{
               fontSize: "16px",
               color: "rgba(255, 255, 255, 0.64);",
               marginTop: "20px",
+              padding: {
+                xs: "0px 20px",
+              },
             }}
           >
             Agency provides a full service range including
           </Typography>
           <Typography
-            sx={{ fontSize: "16px", color: "rgba(255, 255, 255, 0.64);" }}
+            sx={{
+              fontSize: "16px",
+              color: "rgba(255, 255, 255, 0.64);",
+              padding: {
+                xs: "0px 20px",
+              },
+            }}
           >
             technical skills, design, business understanding.
           </Typography>
-          <Box sx={{ marginTop: "30px" }}>
+          <Box
+            sx={{
+              marginTop: "30px",
+              marginLeft: {
+                xs: "20px",
+              },
+            }}
+          >
             <Button
               sx={{
                 width: "148px",
@@ -82,7 +127,16 @@ const ModernStudio = () => {
               Contact Us
             </Button>
           </Box>
-          <Box sx={{ display: "flex", color: "white", paddingTop: "50px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              color: "white",
+              paddingTop: "50px",
+              marginLeft: {
+                xs: "20px",
+              },
+            }}
+          >
             <Box>
               <Image src={MetaImg} width={48} height={48} alt="meta-img" />
             </Box>
@@ -98,7 +152,7 @@ const ModernStudio = () => {
           </Box>
         </Box>
         <Box>
-          <Image src={RightSide} width={640} height={600} alt="rightSide" />
+          <Image src={RightSide} width={700} height={600} alt="rightSide" />
         </Box>
       </Box>
     </Box>
