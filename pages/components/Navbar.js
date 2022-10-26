@@ -19,6 +19,7 @@ const Navbar = () => {
     <AppBar
       sx={{
         backgroundColor: "#28293E",
+        position: "static",
         padding: {
           xs: "10px 0px",
           md: "15px 0px",
@@ -139,7 +140,7 @@ const Navbar = () => {
                 backgroundColor: "#28293E",
                 height: "100vh",
                 position: "absolute",
-                right: "-30px",
+                right: "0px",
                 top: "40px",
                 padding: "0px 60px",
                 marginTop: "20px",
