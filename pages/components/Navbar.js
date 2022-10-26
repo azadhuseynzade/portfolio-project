@@ -31,7 +31,7 @@ const Navbar = () => {
             display: "flex",
 
             justifyContent: {
-              md: "space-around",
+              md: "space-between",
               sm: "space=between",
             },
           }}
@@ -66,16 +66,16 @@ const Navbar = () => {
                 },
               }}
             >
-              <ListItem sx={{ marginRight: "45px", cursor: "pointer" }}>
+              <ListItem sx={{ cursor: "pointer", paddingLeft: "70px" }}>
                 <ListItemText sx={{ fontSize: "16px" }} primary="About" />
               </ListItem>
-              <ListItem sx={{ marginRight: "45px", cursor: "pointer" }}>
+              <ListItem sx={{ cursor: "pointer", paddingLeft: "70px" }}>
                 <ListItemText sx={{ fontSize: "16px" }} primary="Services" />
               </ListItem>
-              <ListItem sx={{ marginRight: "45px", cursor: "pointer" }}>
+              <ListItem sx={{ cursor: "pointer", paddingLeft: "70px" }}>
                 <ListItemText sx={{ fontSize: "16px" }} primary="Pricing" />
               </ListItem>
-              <ListItem sx={{ marginRight: "45px", cursor: "pointer" }}>
+              <ListItem sx={{ cursor: "pointer", paddingLeft: "70px" }}>
                 <ListItemText sx={{ fontSize: "16px" }} primary="Blog" />
               </ListItem>
             </List>
@@ -143,6 +143,7 @@ const Navbar = () => {
                 top: "40px",
                 padding: "0px 60px",
                 marginTop: "20px",
+                borderLeft: "1px solid white",
               }}
             >
               <List>
