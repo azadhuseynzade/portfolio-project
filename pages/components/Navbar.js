@@ -138,7 +138,7 @@ const Navbar = () => {
             <Box
               sx={{
                 backgroundColor: "#28293E",
-                height: "100vh",
+                height: "400vh",
                 position: "absolute",
                 right: "0px",
                 top: "40px",

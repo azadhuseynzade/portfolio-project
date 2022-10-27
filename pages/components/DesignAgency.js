@@ -19,7 +19,7 @@ const DesignAgency = () => {
             xs: "center",
             sm: "center",
 
-            md: "space-between",
+            md: "center",
           },
           margin: "0 auto",
           borderTop: "1px solid #F3D1BF",
@@ -27,8 +27,10 @@ const DesignAgency = () => {
             xs: "50px",
             md: "100px",
           },
-
-          paddingBottom: "130px",
+          paddingBottom: {
+            xs: "70px",
+            md: "130px",
+          },
         }}
       >
         <Box
@@ -49,10 +51,14 @@ const DesignAgency = () => {
           sx={{
             maxWidth: {
               xs: "307px",
-              md: "467px",
+              md: "477px",
             },
             textAlign: "left",
             paddingLeft: "30px",
+            marginLeft: {
+              xs: "0px",
+              md: "30px",
+            },
 
             paddingTop: {
               sm: "0px",
