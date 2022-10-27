@@ -12,10 +12,13 @@ const DesignAgency = () => {
           display: "flex",
           flexDirection: {
             xs: "column",
+            sm: "row",
             md: "row",
           },
           justifyContent: {
             xs: "center",
+            sm: "center",
+
             md: "space-between",
           },
           margin: "0 auto",
@@ -51,7 +54,10 @@ const DesignAgency = () => {
             textAlign: "left",
             paddingLeft: "30px",
 
-            paddingTop: "100px",
+            paddingTop: {
+              sm: "0px",
+              md: "100px",
+            },
           }}
         >
           <Typography
