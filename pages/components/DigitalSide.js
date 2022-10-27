@@ -13,11 +13,12 @@ const DigitalSide = () => {
         sx={{
           display: "flex",
           justifyContent: "space-around",
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           margin: "0 auto",
           padding: "50px 0px",
           flexWrap: {
             xs: "wrap",
+            sm: "nowrap",
             md: "nowrap",
           },
           paddingLeft: {
