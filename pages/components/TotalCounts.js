@@ -16,7 +16,7 @@ const TotalCounts = () => {
           paddingBottom: "80px",
           paddingLeft: {
             xs: "30px",
-            md: "50px",
+            md: "100px",
           },
           paddingRight: "30px",
         }}
@@ -25,11 +25,11 @@ const TotalCounts = () => {
           sx={{
             width: {
               xs: "100%",
-              md: "391px",
+              md: "400px",
             },
             maxWidth: {
               xs: "320px",
-              md: "391px",
+              md: "400px",
             },
             height: "176px",
             border: "1px solid #F3D1BF",
@@ -64,11 +64,11 @@ const TotalCounts = () => {
           sx={{
             width: {
               xs: "100%",
-              md: "391px",
+              md: "400px",
             },
             maxWidth: {
               xs: "320px",
-              md: "391px",
+              md: "400px",
             },
             height: "176px",
             border: "1px solid #F3D1BF",
@@ -103,11 +103,11 @@ const TotalCounts = () => {
           sx={{
             width: {
               xs: "100%",
-              md: "391px",
+              md: "400px",
             },
             maxWidth: {
               xs: "320px",
-              md: "391px",
+              md: "400px",
             },
             height: "176px",
             border: "1px solid #F3D1BF",
