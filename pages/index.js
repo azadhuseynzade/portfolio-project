@@ -7,6 +7,7 @@ import DesignAgency from "./components/DesignAgency";
 import TotalCounts from "./components/TotalCounts";
 import LookAwasome from "./components/LookAwasome";
 import Video from "./components/Video";
+import NewLook from "./components/NewLook";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TotalCounts />
       <LookAwasome />
       <Video />
+      <NewLook />
     </div>
   );
 }
