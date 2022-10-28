@@ -6,6 +6,8 @@ import ModernStudio from "./components/ModernStudio";
 import DesignAgency from "./components/DesignAgency";
 import TotalCounts from "./components/TotalCounts";
 import LookAwasome from "./components/LookAwasome";
+import Video from "./components/Video";
+
 export default function Home() {
   return (
     <div>
@@ -14,6 +16,7 @@ export default function Home() {
       <DesignAgency />
       <TotalCounts />
       <LookAwasome />
+      <Video />
     </div>
   );
 }
