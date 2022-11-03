@@ -8,6 +8,7 @@ import TotalCounts from "./components/TotalCounts";
 import LookAwasome from "./components/LookAwasome";
 import Video from "./components/Video";
 import NewLook from "./components/NewLook";
+import Professional from "./components/Professional";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <LookAwasome />
       <Video />
       <NewLook />
+      <Professional />
     </div>
   );
 }
