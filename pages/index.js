@@ -9,6 +9,7 @@ import LookAwasome from "./components/LookAwasome";
 import Video from "./components/Video";
 import NewLook from "./components/NewLook";
 import Professional from "./components/Professional";
+import MakingComplex from "./components/MakingComplex";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Video />
       <NewLook />
       <Professional />
+      <MakingComplex />
     </div>
   );
 }
