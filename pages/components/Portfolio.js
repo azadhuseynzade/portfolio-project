@@ -6,6 +6,10 @@ import {
   Typography,
   Badge,
   Button,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import React from "react";
 import Image from "next/image";
@@ -29,7 +33,7 @@ const Portfolio = () => {
         <Typography
           variant="subtitle1"
           sx={{
-            fontSize: "52px",
+            fontSize: { xs: "40px", md: "52px" },
             fontWeight: "800",
             color: "#FFFFFF",
             textAlign: "center",
@@ -38,7 +42,13 @@ const Portfolio = () => {
           Latest Work{" "}
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", margin: "0 auto" }}>
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" },
+          justifyContent: "center",
+          margin: "0 auto",
+        }}
+      >
         <List
           sx={{ display: "flex", justifyContent: "center", margin: "0 auto" }}
         >
@@ -138,6 +148,23 @@ const Portfolio = () => {
           </ListItem>
         </List>
       </Box>
+      <Box sx={{ display: { xs: "block", md: "none" }, padding: "30px 20px" }}>
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-label">All</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            label="Age"
+            sx={{ backgroundColor: "white" }}
+          >
+            <MenuItem value={10}>All</MenuItem>
+            <MenuItem value={20}>Design</MenuItem>
+            <MenuItem value={30}>Branding</MenuItem>
+            <MenuItem value={30}>Illustration</MenuItem>
+            <MenuItem value={30}>Motion</MenuItem>
+          </Select>
+        </FormControl>
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -146,22 +173,72 @@ const Portfolio = () => {
           margin: "0 auto",
         }}
       >
-        <Box sx={{ display: "flex", marginTop: "50px" }}>
-          <Box sx={{ borderRadius: "6px" }}>
-            <Image src={Sofa} alt="sofa" width={450} height={418} />
+        <Box
+          sx={{
+            display: "flex",
+            marginTop: "50px",
+            flexDirection: { xs: "column", md: "row" },
+            margin: { xs: "0 auto" },
+          }}
+        >
+          <Box
+            sx={{
+              borderRadius: "6px",
+              maxWidth: {
+                xs: "329px",
+                md: "450px",
+              },
+            }}
+          >
+            <Image src={Sofa} alt="sofa" height={418} />
           </Box>
-          <Box sx={{ marginLeft: "20px", borderRadius: "6px" }}>
-            <Image src={Design} alt="sofa" width={650} height={418} />
+          <Box
+            sx={{
+              marginLeft: { xs: "0px", md: "20px" },
+              borderRadius: "6px",
+              maxWidth: {
+                xs: "329px",
+                md: "650px",
+              },
+            }}
+          >
+            <Image src={Design} alt="sofa" height={415} />
           </Box>
         </Box>
-        <Box sx={{ display: "flex", marginTop: "20px" }}>
-          <Box sx={{ borderRadius: "6px" }}>
-            <Image src={Media} alt="sofa" width={650} height={418} />
+        <Box
+          sx={{
+            display: "flex",
+            marginTop: "50px",
+            flexDirection: { xs: "column", md: "row" },
+            margin: { xs: "0 auto" },
+          }}
+        >
+          <Box
+            sx={{
+              borderRadius: "6px",
+              maxWidth: {
+                xs: "329px",
+                md: "650px",
+              },
+            }}
+          >
+            <Image src={Media} alt="sofa" height={415} />
           </Box>
-          <Box sx={{ borderRadius: "6px", marginLeft: "20px" }}>
-            <Image src={Done} alt="sofa" width={450} height={418} />
+          <Box
+            sx={{
+              borderRadius: "6px",
+              marginLeft: { xs: "0px", md: "20px" },
+
+              maxWidth: {
+                xs: "329px",
+                md: "450px",
+              },
+            }}
+          >
+            <Image src={Done} alt="sofa" height={418} />
           </Box>
         </Box>
+
         <Button
           sx={{
             width: "170px",
@@ -179,11 +256,13 @@ const Portfolio = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", md: "row" },
             backgroundColor: "#FDF0E9",
             justifyContent: "space-around",
             position: "relative",
             paddingTop: "100px",
             marginTop: "150px",
+            margin: { xs: "0px 30px", md: "150px 0px 0px 0px" },
           }}
         >
           <Box>
@@ -223,7 +302,14 @@ const Portfolio = () => {
           <Box sx={{ paddingRight: "300px" }}>
             <Image src={Block} alt="sofa" width={338} height={176} />
           </Box>
-          <Box sx={{ position: "absolute", bottom: "0px", right: "40px" }}>
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: "0px",
+              right: "40px",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Image src={Path} alt="sofa" width={239} height={366} />
           </Box>
         </Box>
