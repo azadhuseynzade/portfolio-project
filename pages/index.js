@@ -10,6 +10,7 @@ import Video from "./components/Video";
 import NewLook from "./components/NewLook";
 import Professional from "./components/Professional";
 import MakingComplex from "./components/MakingComplex";
+import HowCanHelp from "./components/HowCanHelp";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <NewLook />
       <Professional />
       <MakingComplex />
+      <HowCanHelp />
     </div>
   );
 }
