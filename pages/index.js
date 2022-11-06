@@ -13,6 +13,7 @@ import MakingComplex from "./components/MakingComplex";
 import HowCanHelp from "./components/HowCanHelp";
 import Portfolio from "./components/Portfolio";
 import ExploreFuture from "./components/ExploreFuture";
+import TeamOfDesigners from "./components/TeamOfDesigners";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <HowCanHelp />
       <Portfolio />
       <ExploreFuture />
+      <TeamOfDesigners />
     </div>
   );
 }

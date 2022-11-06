@@ -20,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-player": "^2.11.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.4"
   },
   "devDependencies": {
     "eslint": "8.26.0",
