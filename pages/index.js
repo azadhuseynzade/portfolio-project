@@ -12,6 +12,7 @@ import Professional from "./components/Professional";
 import MakingComplex from "./components/MakingComplex";
 import HowCanHelp from "./components/HowCanHelp";
 import Portfolio from "./components/Portfolio";
+import ExploreFuture from "./components/ExploreFuture";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <MakingComplex />
       <HowCanHelp />
       <Portfolio />
+      <ExploreFuture />
     </div>
   );
 }
