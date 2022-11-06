@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-import React, { useRef } from "react";
+import { Box, Typography, Button } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -7,13 +6,22 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../../styles/Swiper.module.css";
 //
+import React, { useState, useEffect } from "react";
 import { Pagination, Navigation } from "swiper";
 import Image from "next/image";
 import SwiperPic1 from "../assets/swiperPic1.svg";
 import SwiperPic2 from "../assets/swiperPic2.svg";
 import SwiperPic3 from "../assets/swiperPic3.svg";
 import SwiperPic4 from "../assets/swiperPic4.svg";
+import { useSwiper } from "swiper/react";
+import SlideNextButton from "./SlideNextButton";
+import SlidePrevButton from "./SlidePrevButton";
 const TeamOfDesigners = () => {
+  const [swiper, setSwiper] = useState(null);
+
+  const nexto = () => {
+    swiper.slideNext();
+  };
   return (
     <Box
       sx={{
@@ -45,6 +53,7 @@ const TeamOfDesigners = () => {
         >
           Team of Designers <br /> and Developers{" "}
         </Typography>
+
         <Box sx={{ paddingBottom: "40px" }}>
           <Swiper
             slidesPerView={4}
@@ -55,10 +64,11 @@ const TeamOfDesigners = () => {
             pagination={{
               clickable: true,
             }}
-            navigation={true}
             modules={[Pagination, Navigation]}
             style={{ paddingBottom: "40px" }}
           >
+            <SlideNextButton />
+            <SlidePrevButton />
             <SwiperSlide>
               <Image src={SwiperPic1} alt="swiperImg" />
             </SwiperSlide>
@@ -71,14 +81,30 @@ const TeamOfDesigners = () => {
             <SwiperSlide>
               <Image src={SwiperPic4} alt="swiperImg" />
             </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic1} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic4} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic3} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic4} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic1} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic4} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic3} alt="swiperImg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={SwiperPic4} alt="swiperImg" />
+            </SwiperSlide>
           </Swiper>
         </Box>
       </Box>
