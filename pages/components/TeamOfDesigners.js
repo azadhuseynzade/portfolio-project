@@ -30,7 +30,7 @@ const TeamOfDesigners = () => {
     >
       <Box
         sx={{
-          maxWidth: "1100px",
+          maxWidth: "1050px",
           display: "flex",
           flexDirection: "column",
           margin: "0 auto",
@@ -38,7 +38,7 @@ const TeamOfDesigners = () => {
       >
         <Typography
           variant="subtitle1"
-          sx={{ color: "#EF6D58", fontSize: "16px", marginLeft: "30px" }}
+          sx={{ color: "#EF6D58", fontSize: "16px" }}
         >
           Our Team
         </Typography>
@@ -48,14 +48,14 @@ const TeamOfDesigners = () => {
             color: "white",
             fontSize: "56px",
             fontWeight: "800",
-            marginLeft: "30px",
           }}
         >
           Team of Designers <br /> and Developers{" "}
         </Typography>
 
-        <Box sx={{ paddingBottom: "40px" }}>
+        <Box sx={{ paddingBottom: "40px", position: "relative" }}>
           <Swiper
+            navigation={{ nextEl: "#swiper-forward", prevEl: "#swiper-back" }}
             slidesPerView={4}
             spaceBetween={30}
             slidesPerGroup={4}
@@ -67,44 +67,315 @@ const TeamOfDesigners = () => {
             modules={[Pagination, Navigation]}
             style={{ paddingBottom: "40px" }}
           >
-            <SlideNextButton />
             <SlidePrevButton />
+
+            <SlideNextButton />
+
             <SwiperSlide>
-              <Image src={SwiperPic1} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic3} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic1} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={SwiperPic3} alt="swiperImg" />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    border: "1px solid #3A3C56",
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRadius: "6px",
+                    padding: "20px 30px 0px 30px",
+                  }}
+                >
+                  <Image src={SwiperPic1} alt="swiperImg" />
+                </Box>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "24px",
+                    fontWeight: "800",
+                    color: "white",
+                    marginTop: "22px",
+                  }}
+                >
+                  Azah Anyeni
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.64);",
+                    marginTop: "5px",
+                  }}
+                >
+                  Designer
+                </Typography>
+              </Box>
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={SwiperPic1} alt="swiperImg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={SwiperPic3} alt="swiperImg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={SwiperPic4} alt="swiperImg" />
-            </SwiperSlide>
+            {/* <SlidePrevButton />
+
+            <SlideNextButton /> */}
           </Swiper>
         </Box>
       </Box>
