@@ -16,6 +16,7 @@ import SwiperPic4 from "../assets/swiperPic4.svg";
 import { useSwiper } from "swiper/react";
 import SlideNextButton from "./SlideNextButton";
 import SlidePrevButton from "./SlidePrevButton";
+import { margin } from "@mui/system";
 const TeamOfDesigners = () => {
   const [swiper, setSwiper] = useState(null);
 
@@ -31,46 +32,60 @@ const TeamOfDesigners = () => {
       <Box
         sx={{
           maxWidth: "1050px",
-          display: "flex",
-          flexDirection: "column",
           margin: "0 auto",
         }}
       >
-        <Typography
-          variant="subtitle1"
-          sx={{ color: "#EF6D58", fontSize: "16px" }}
-        >
-          Our Team
-        </Typography>
-        <Typography
-          variant="h2"
-          sx={{
-            color: "white",
-            fontSize: "56px",
-            fontWeight: "800",
+        <Box>
+          <Typography
+            variant="subtitle1"
+            sx={{ color: "#EF6D58", fontSize: "16px" }}
+          >
+            Our Team
+          </Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "white",
+              fontSize: "56px",
+              fontWeight: "800",
+            }}
+          >
+            Team of Designers <br /> and Developers{" "}
+          </Typography>
+        </Box>
+        <Box></Box>
+
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          slidesPerGroup={4}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Navigation]}
+          style={{
+            paddingBottom: "40px",
+            backgroundColor: "#28293E",
+            display: "flex",
+            flexDirection: "column-reverse",
           }}
         >
-          Team of Designers <br /> and Developers{" "}
-        </Typography>
-
-        <Box sx={{ paddingBottom: "40px", position: "relative" }}>
-          <Swiper
-            navigation={{ nextEl: "#swiper-forward", prevEl: "#swiper-back" }}
-            slidesPerView={4}
-            spaceBetween={30}
-            slidesPerGroup={4}
-            loop={true}
-            loopFillGroupWithBlank={true}
-            pagination={{
-              clickable: true,
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              color: " #FFFFFF",
+              marginBottom: "40px",
             }}
-            modules={[Pagination, Navigation]}
-            style={{ paddingBottom: "40px" }}
           >
             <SlidePrevButton />
-
             <SlideNextButton />
+          </Box>
 
+          <Box>
+            <Typography variant="h1">hello</Typography>
             <SwiperSlide>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Box
@@ -113,7 +128,6 @@ const TeamOfDesigners = () => {
                 </Typography>
               </Box>
             </SwiperSlide>
-
             <SwiperSlide>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Box
@@ -125,7 +139,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -162,7 +181,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -199,7 +223,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -236,7 +265,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -273,7 +307,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -310,7 +349,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -347,7 +391,12 @@ const TeamOfDesigners = () => {
                     padding: "20px 30px 0px 30px",
                   }}
                 >
-                  <Image src={SwiperPic1} alt="swiperImg" />
+                  <Image
+                    src={SwiperPic1}
+                    alt="swiperImg"
+                    width={196}
+                    height={247}
+                  />
                 </Box>
                 <Typography
                   variant="h4"
@@ -373,11 +422,8 @@ const TeamOfDesigners = () => {
                 </Typography>
               </Box>
             </SwiperSlide>
-            {/* <SlidePrevButton />
-
-            <SlideNextButton /> */}
-          </Swiper>
-        </Box>
+          </Box>
+        </Swiper>
       </Box>
     </Box>
   );
