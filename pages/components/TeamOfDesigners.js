@@ -38,7 +38,11 @@ const TeamOfDesigners = () => {
         <Box>
           <Typography
             variant="subtitle1"
-            sx={{ color: "#EF6D58", fontSize: "16px" }}
+            sx={{
+              color: "#EF6D58",
+              fontSize: "16px",
+              marginLeft: { xs: "30px", md: "0px" },
+            }}
           >
             Our Team
           </Typography>
@@ -46,21 +50,35 @@ const TeamOfDesigners = () => {
             variant="h2"
             sx={{
               color: "white",
-              fontSize: "56px",
+              fontSize: { xs: "40px", md: "56px" },
               fontWeight: "800",
+              marginLeft: { xs: "30px", md: "0px" },
             }}
           >
             Team of Designers <br /> and Developers{" "}
           </Typography>
         </Box>
-        <Box></Box>
 
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          slidesPerGroup={4}
+          slidesPerView="auto"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+              slidesPerGroup: 1,
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+              slidesPerGroup: 1,
+            },
+            1080: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+              slidesPerGroup: 4,
+            },
+          }}
           loop={true}
-          loopFillGroupWithBlank={true}
           pagination={{
             clickable: true,
           }}
@@ -74,7 +92,7 @@ const TeamOfDesigners = () => {
         >
           <Box
             sx={{
-              display: "flex",
+              display: { md: "flex", xs: "none" },
               justifyContent: "flex-end",
               color: " #FFFFFF",
               marginBottom: "40px",
@@ -94,7 +112,12 @@ const TeamOfDesigners = () => {
                     display: "flex",
                     justifyContent: "center",
                     borderRadius: "6px",
-                    padding: "20px 30px 0px 30px",
+                    padding: {
+                      xs: "0px 30px ",
+                      md: "20px 30px 0px 30px",
+                    },
+                    margin: { xs: "0px 20px", md: "0px" },
+                    marginTop: { xs: "50px", md: "0px" },
                   }}
                 >
                   <Image
@@ -111,6 +134,7 @@ const TeamOfDesigners = () => {
                     fontWeight: "800",
                     color: "white",
                     marginTop: "22px",
+                    marginLeft: { xs: "30px", md: "0px" },
                   }}
                 >
                   Azah Anyeni
@@ -122,6 +146,7 @@ const TeamOfDesigners = () => {
                     fontWeight: "400",
                     color: "rgba(255, 255, 255, 0.64);",
                     marginTop: "5px",
+                    marginLeft: { xs: "30px", md: "0px" },
                   }}
                 >
                   Designer
