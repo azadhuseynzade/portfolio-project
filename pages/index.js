@@ -15,6 +15,7 @@ import Portfolio from "./components/Portfolio";
 import ExploreFuture from "./components/ExploreFuture";
 import TeamOfDesigners from "./components/TeamOfDesigners";
 import FounderWords from "./components/FounderWords";
+import ClientsComments from "./components/ClientsComments";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <ExploreFuture />
       <TeamOfDesigners />
       <FounderWords />
+      <ClientsComments />
     </div>
   );
 }
