@@ -24,7 +24,7 @@ const ClientsComments = () => {
         variant="h2"
         sx={{
           color: "#391400",
-          fontSize: "56px",
+          fontSize: { xs: "40px", md: "56px" },
           textAlign: "center",
           fontWeight: "800",
         }}
@@ -35,9 +35,10 @@ const ClientsComments = () => {
         variant="h2"
         sx={{
           color: "#391400",
-          fontSize: "56px",
+          fontSize: { xs: "40px", md: "56px" },
           textAlign: "center",
           fontWeight: "800",
+          paddingBottom: { xs: "30px", md: "0px" },
         }}
       >
         Clients Saying
@@ -49,6 +50,7 @@ const ClientsComments = () => {
           margin: "0 auto",
           flexWrap: "wrap",
           paddingTop: "60px",
+          padding: { xs: "0px 20px", md: "60px 0px 0px 0px" },
         }}
       >
         <Box
@@ -57,6 +59,7 @@ const ClientsComments = () => {
             padding: "48px ",
             border: "1px solid #F3D1BF",
             borderRadius: "6px",
+            "&:hover": { backgroundColor: "white" },
           }}
         >
           <Rating />
@@ -106,6 +109,7 @@ const ClientsComments = () => {
             padding: "48px ",
             border: "1px solid #F3D1BF",
             borderRadius: "6px",
+            "&:hover": { backgroundColor: "white" },
           }}
         >
           <Rating />
@@ -155,6 +159,7 @@ const ClientsComments = () => {
             padding: "48px ",
             border: "1px solid #F3D1BF",
             borderRadius: "6px",
+            "&:hover": { backgroundColor: "white" },
           }}
         >
           <Rating />
@@ -204,6 +209,7 @@ const ClientsComments = () => {
             padding: "48px ",
             border: "1px solid #F3D1BF",
             borderRadius: "6px",
+            "&:hover": { backgroundColor: "white" },
           }}
         >
           <Rating />
