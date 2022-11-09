@@ -14,6 +14,7 @@ import HowCanHelp from "./components/HowCanHelp";
 import Portfolio from "./components/Portfolio";
 import ExploreFuture from "./components/ExploreFuture";
 import TeamOfDesigners from "./components/TeamOfDesigners";
+import FounderWords from "./components/FounderWords";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Portfolio />
       <ExploreFuture />
       <TeamOfDesigners />
+      <FounderWords />
     </div>
   );
 }
