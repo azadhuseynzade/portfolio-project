@@ -15,7 +15,8 @@ const FounderWords = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-around",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: { xs: "center", md: "space-around" },
           maxWidth: "1100px",
           margin: "0 auto",
         }}
@@ -24,14 +25,25 @@ const FounderWords = () => {
           sx={{
             borderRadius: "6px",
             maxWidth: "470px",
+            margin: { xs: "0px 20px", md: "0px" },
           }}
         >
           <Image src={FounderImage} alt="founderImage" />
         </Box>
-        <Box sx={{ position: "relative", zIndex: "10" }}>
+        <Box
+          sx={{
+            position: "relative",
+            zIndex: "10",
+            margin: { xs: "0px 20px", md: "0px" },
+          }}
+        >
           <Typography
             variant="subtitle1"
-            sx={{ color: "#EF6D58", marginTop: "35px" }}
+            sx={{
+              color: "#EF6D58",
+              marginTop: "35px",
+              fontSize: "16px",
+            }}
           >
             Founder Words
           </Typography>
@@ -54,7 +66,7 @@ const FounderWords = () => {
             variant="h3"
             sx={{
               color: "#EF6D58",
-              fontSize: "38px",
+              fontSize: { xs: "24px", md: "38px" },
               fontWeight: "800",
               color: "white",
               marginTop: "25px",
@@ -66,7 +78,7 @@ const FounderWords = () => {
             variant="h3"
             sx={{
               color: "#EF6D58",
-              fontSize: "38px",
+              fontSize: { xs: "24px", md: "38px" },
               fontWeight: "800",
               color: "white",
             }}
@@ -77,7 +89,7 @@ const FounderWords = () => {
             variant="h3"
             sx={{
               color: "#EF6D58",
-              fontSize: "38px",
+              fontSize: { xs: "24px", md: "38px" },
               fontWeight: "800",
               color: "white",
             }}
@@ -88,7 +100,7 @@ const FounderWords = () => {
             variant="h3"
             sx={{
               color: "#EF6D58",
-              fontSize: "38px",
+              fontSize: { xs: "24px", md: "38px" },
               fontWeight: "800",
               color: "white",
             }}
