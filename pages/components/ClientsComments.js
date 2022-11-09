@@ -11,7 +11,7 @@ const ClientsComments = () => {
       sx={{
         backgroundColor: " #FDF0E9",
         paddingTop: "120px",
-        paddingBottom: "50px",
+        paddingBottom: "80px",
       }}
     >
       <Typography
