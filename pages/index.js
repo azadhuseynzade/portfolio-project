@@ -18,6 +18,7 @@ import FounderWords from "./components/FounderWords";
 import ClientsComments from "./components/ClientsComments";
 import PricingPlans from "./components/PricingPlans";
 import FrequentlyAsked from "./components/FrequentlyAsked";
+import OurAwards from "./components/OurAwards";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <ClientsComments />
       <PricingPlans />
       <FrequentlyAsked />
+      <OurAwards />
     </div>
   );
 }
