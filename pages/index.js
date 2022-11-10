@@ -22,6 +22,7 @@ import OurAwards from "./components/OurAwards";
 import LatestBlog from "./components/LatestBlog";
 import NewsLetter from "./components/NewsLetter";
 import Map from "./components/Map";
+import Address from "./components/Address";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
       <LatestBlog />
       <NewsLetter />
       <Map />
+      <Address />
     </div>
   );
 }

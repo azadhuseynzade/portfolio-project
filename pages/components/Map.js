@@ -17,7 +17,7 @@ const Map = () => {
       sx={{
         maxWidth: "100%",
         background: `url(${MapImage.src}) center / cover`,
-        padding: { xs: "30px 30px", md: "120px 130px" },
+        padding: { xs: "30px 30px", md: "120px 130px 120px 210px" },
       }}
     >
       <Box
