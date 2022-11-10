@@ -6,7 +6,7 @@ const NewsLetter = () => {
     <Box
       sx={{
         backgroundColor: "#FDF0E9",
-        padding: { xs: "30px 20px", md: "40px 0px" },
+        padding: { xs: "30px 20px", md: "40px 0px 80px 0px" },
       }}
     >
       <Box

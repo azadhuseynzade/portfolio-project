@@ -21,6 +21,7 @@ import FrequentlyAsked from "./components/FrequentlyAsked";
 import OurAwards from "./components/OurAwards";
 import LatestBlog from "./components/LatestBlog";
 import NewsLetter from "./components/NewsLetter";
+import Map from "./components/Map";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       <OurAwards />
       <LatestBlog />
       <NewsLetter />
+      <Map />
     </div>
   );
 }
