@@ -6,7 +6,7 @@ import RightSide from "../assets/pic.svg";
 const Footer = () => {
   return (
     <Box>
-      <Typography>Footer dddddddddl lorem10</Typography>
+      <Typography></Typography>
     </Box>
   );
 };

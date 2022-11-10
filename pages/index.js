@@ -20,6 +20,7 @@ import PricingPlans from "./components/PricingPlans";
 import FrequentlyAsked from "./components/FrequentlyAsked";
 import OurAwards from "./components/OurAwards";
 import LatestBlog from "./components/LatestBlog";
+import NewsLetter from "./components/NewsLetter";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
       <FrequentlyAsked />
       <OurAwards />
       <LatestBlog />
+      <NewsLetter />
     </div>
   );
 }
