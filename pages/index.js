@@ -23,6 +23,7 @@ import LatestBlog from "./components/LatestBlog";
 import NewsLetter from "./components/NewsLetter";
 import Map from "./components/Map";
 import Address from "./components/Address";
+import DreamProject from "./components/DreamProject";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <NewsLetter />
       <Map />
       <Address />
+      <DreamProject />
     </div>
   );
 }
