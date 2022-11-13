@@ -102,7 +102,7 @@ const DreamProject = () => {
           </Box>
         </Box>
         <Box>
-          <Image src={RightSide} width={700} height={600} alt="rightSide" />
+          <Image src={RightSide} width={700} height={800} alt="rightSide" />
         </Box>
       </Box>
     </Box>

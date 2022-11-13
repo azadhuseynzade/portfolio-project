@@ -12,82 +12,53 @@ const DigitalSide = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: { xs: "center", md: "space-around" },
           maxWidth: "1250px",
           margin: "0 auto",
           padding: "50px 0px",
-          flexWrap: {
-            xs: "wrap",
-            sm: "nowrap",
-            md: "nowrap",
-          },
-          paddingLeft: {
-            xs: "20px",
+
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "row",
           },
         }}
       >
-        <Box
-          sx={{
-            width: {
-              xs: "147px",
-            },
-            paddingTop: {
-              md: "10px",
-            },
-          }}
-        >
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Image src={Side1Img} width={147} height={42} alt="side1" />
         </Box>
         <Box
           sx={{
-            width: {
-              xs: "147px",
-            },
-            paddingTop: {
-              md: "10px",
-            },
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: { xs: "25px", md: "0px" },
           }}
         >
           <Image src={Side2Img} width={108} height={32} alt="side1" />
         </Box>
         <Box
           sx={{
-            width: {
-              xs: "147px",
-            },
-            paddingTop: {
-              xs: "20px",
-              md: "0px",
-            },
-            paddingLeft: {
-              xs: "10px",
-            },
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: { xs: "25px", md: "0px" },
           }}
         >
           <Image src={Side3Img} width={119} height={47} alt="side1" />
         </Box>
         <Box
           sx={{
-            width: {
-              xs: "147px",
-            },
-            paddingTop: {
-              xs: "30px",
-              md: "15px",
-            },
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: { xs: "25px", md: "0px" },
           }}
         >
           <Image src={Side4Img} width={86} height={21} alt="side1" />
         </Box>
         <Box
           sx={{
-            width: {
-              xs: "147px",
-            },
-            paddingTop: {
-              xs: "30px",
-              md: "15px",
-            },
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: { xs: "30px", md: "0px" },
           }}
         >
           <Image src={Side5Img} width={126} height={24} alt="side1" />

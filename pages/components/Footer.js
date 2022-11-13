@@ -31,6 +31,7 @@ const Footer = () => {
               fontSize: "24px",
               fontWeight: "800",
               textAlign: "center",
+              cursor: "pointer",
             }}
           >
             Agency
@@ -40,6 +41,7 @@ const Footer = () => {
           sx={{
             marginTop: { xs: "30px", md: "10px" },
             textAlign: { xs: "center", md: "left" },
+            cursor: "pointer",
           }}
         >
           <Typography
@@ -101,6 +103,7 @@ const Footer = () => {
           sx={{
             marginTop: { xs: "30px", md: "10px" },
             textAlign: { xs: "center", md: "left" },
+            cursor: "pointer",
           }}
         >
           <Typography
@@ -159,6 +162,7 @@ const Footer = () => {
             display: "flex",
             justifyContent: "center",
             marginTop: { xs: "30px", md: "0px" },
+            cursor: "pointer",
           }}
         >
           <Box
@@ -243,6 +247,7 @@ const Footer = () => {
               fontSize: "16px",
               fontWeight: "400",
               textAlign: "center",
+              cursor: "pointer",
             }}
           >
             Terms of Use{" "}
@@ -255,6 +260,7 @@ const Footer = () => {
               fontWeight: "400",
               textAlign: "center",
               paddingLeft: { xs: "0px", md: "60px" },
+              cursor: "pointer",
             }}
           >
             Privacy Policy{" "}

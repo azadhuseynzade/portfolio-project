@@ -5,7 +5,7 @@ const TotalCounts = () => {
     <Box sx={{ backgroundColor: "#FDF0E9" }}>
       <Box
         sx={{
-          maxWidth: "1100px",
+          maxWidth: "1200px",
           display: "flex",
           flexDirection: {
             xs: "column",

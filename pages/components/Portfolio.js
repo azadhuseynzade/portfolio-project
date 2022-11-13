@@ -20,9 +20,16 @@ import Done from "../assets/done.jpg";
 import Block from "../assets/block.png";
 import Path from "../assets/girlsssss.svg";
 import IconStar from "../assets/iconStar.svg";
+import { Keyboard } from "swiper";
 const Portfolio = () => {
   return (
-    <Box sx={{ backgroundColor: "#28293E", paddingBottom: "80px" }}>
+    <Box
+      sx={{
+        backgroundColor: "#28293E",
+        paddingBottom: "80px",
+        paddingTop: "90px",
+      }}
+    >
       <Box>
         <Typography
           variant="subtitle1"
@@ -169,8 +176,9 @@ const Portfolio = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          maxWidth: "1050px",
+          maxWidth: "1100px",
           margin: "0 auto",
+          paddingTop: { xs: "0px", md: "45px" },
         }}
       >
         <Box
@@ -178,64 +186,189 @@ const Portfolio = () => {
             display: "flex",
             marginTop: "50px",
             flexDirection: { xs: "column", md: "row" },
-            margin: { xs: "0 auto" },
+            padding: "0px 30px",
           }}
         >
           <Box
             sx={{
               borderRadius: "6px",
-              maxWidth: {
-                xs: "329px",
-                md: "450px",
-              },
+              background: `url(${Sofa.src}) center / cover`,
             }}
           >
-            <Image src={Sofa} alt="sofa" height={418} />
+            <Box
+              sx={{
+                padding: {
+                  xs: "260px 200px 100px 44px",
+                  md: "260px 280px 100px 60px",
+                },
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  background: "white",
+                  color: "#391400",
+                  fontSize: "16px ",
+                  width: "84px",
+
+                  padding: "5px 0px",
+                  borderRadius: "19px",
+                  textAlign: "center",
+                }}
+              >
+                Design
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: "white",
+                  fontSize: "40px ",
+                  borderRadius: "19px",
+                  fontWeight: "700",
+                  paddingTop: "15px",
+                }}
+              >
+                Sofa
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
-              marginLeft: { xs: "0px", md: "20px" },
               borderRadius: "6px",
-              maxWidth: {
-                xs: "329px",
-                md: "650px",
-              },
+              background: `url(${Design.src}) center / cover`,
+              marginLeft: { xs: "0px", md: "20px" },
             }}
           >
-            <Image src={Design} alt="sofa" height={415} />
+            <Box
+              sx={{
+                padding: {
+                  xs: "260px 200px 100px 44px",
+                  md: "260px 400px 100px 50px",
+                },
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  background: "white",
+                  color: "#391400",
+                  fontSize: "16px ",
+                  width: "102px",
+                  textAlign: "center",
+                  padding: "5px 0px",
+                  borderRadius: "19px",
+                }}
+              >
+                Branding
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: "white",
+                  fontSize: "38px ",
+                  borderRadius: "19px",
+                  fontWeight: "700",
+                  paddingTop: "15px",
+                }}
+              >
+                Keyboard
+              </Typography>
+            </Box>
           </Box>
         </Box>
         <Box
           sx={{
             display: "flex",
-            marginTop: "50px",
+            marginTop: { xs: "0px", md: "50px" },
             flexDirection: { xs: "column", md: "row" },
-            margin: { xs: "0 auto" },
+            padding: "0px 30px",
           }}
         >
           <Box
             sx={{
               borderRadius: "6px",
-              maxWidth: {
-                xs: "329px",
-                md: "650px",
-              },
+              background: `url(${Media.src}) center / cover`,
             }}
           >
-            <Image src={Media} alt="sofa" height={415} />
+            <Box
+              sx={{
+                padding: {
+                  xs: "260px 200px 100px 44px",
+                  md: "260px 400px 100px 50px",
+                },
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  background: "white",
+                  color: "#391400",
+                  fontSize: "16px ",
+                  width: "102px",
+                  textAlign: "center",
+                  padding: "5px 0px",
+                  borderRadius: "19px",
+                }}
+              >
+                Illustration
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: "white",
+                  fontSize: "38px ",
+                  borderRadius: "19px",
+                  fontWeight: "700",
+                  paddingTop: "15px",
+                }}
+              >
+                KeyMedia
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
               borderRadius: "6px",
+              background: `url(${Done.src}) center / cover`,
               marginLeft: { xs: "0px", md: "20px" },
-
-              maxWidth: {
-                xs: "329px",
-                md: "450px",
-              },
             }}
           >
-            <Image src={Done} alt="sofa" height={418} />
+            <Box
+              sx={{
+                padding: {
+                  xs: "260px 200px 100px 44px",
+                  md: "260px 210px 100px 60px",
+                },
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  background: "white",
+                  color: "#391400",
+                  fontSize: "16px ",
+                  width: "84px",
+
+                  padding: "5px 0px",
+                  borderRadius: "19px",
+                  textAlign: "center",
+                }}
+              >
+                Motion{" "}
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: "white",
+                  fontSize: "40px ",
+                  borderRadius: "19px",
+                  fontWeight: "700",
+                  paddingTop: "15px",
+                }}
+              >
+                DDDone
+              </Typography>
+            </Box>
           </Box>
         </Box>
 
@@ -260,18 +393,28 @@ const Portfolio = () => {
             backgroundColor: "#FDF0E9",
             justifyContent: "space-around",
             position: "relative",
-            paddingTop: "100px",
+            paddingTop: { xs: "15px", md: "100px" },
             marginTop: "150px",
-            margin: { xs: "0px 30px", md: "150px 0px 0px 0px" },
+            margin: { xs: "50px 30px", md: "150px 0px 0px 0px" },
           }}
         >
           <Box>
-            <Box sx={{ position: "absolute", bottom: "200px" }}>
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: "200px",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Image src={IconStar} alt="star" />
             </Box>
             <Typography
               variant="subtitle1"
-              sx={{ fontSize: "16px", color: "#EF6D58" }}
+              sx={{
+                fontSize: "16px",
+                color: "#EF6D58",
+                textAlign: { xs: "center", md: "left" },
+              }}
             >
               Get Started
             </Typography>
@@ -283,21 +426,28 @@ const Portfolio = () => {
                 color: "#391400",
                 margin: "0px",
                 padding: "0px",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               We Help Companies <br /> Move Faster
             </Typography>
-
-            <Button
+            <Box
               sx={{
-                backgroundColor: " #EF6D58",
-                color: "white",
-                fontWeight: "700",
-                marginTop: "20px",
+                display: "flex",
+                justifyContent: { xs: "center", md: "flex-start" },
               }}
             >
-              Contact Us
-            </Button>
+              <Button
+                sx={{
+                  backgroundColor: " #EF6D58",
+                  color: "white",
+                  fontWeight: "700",
+                  marginTop: "20px",
+                }}
+              >
+                Contact Us
+              </Button>
+            </Box>
           </Box>
           <Box sx={{ paddingRight: "300px" }}>
             <Image src={Block} alt="sofa" width={338} height={176} />

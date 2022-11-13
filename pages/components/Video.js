@@ -21,7 +21,7 @@ const Video = () => {
       >
         <Box
           sx={{
-            width: { xs: "329px", md: "580px" },
+            maxWidth: { xs: "329px", md: "580px" },
             height: { xs: "212px", md: "368px" },
             margin: { xs: "0 auto" },
           }}

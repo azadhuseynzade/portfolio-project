@@ -11,6 +11,7 @@ import {
 import React from "react";
 import MapImage from "../assets/mapp.png";
 import Image from "next/image";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Map = () => {
   return (
     <Box
@@ -18,6 +19,7 @@ const Map = () => {
         maxWidth: "100%",
         background: `url(${MapImage.src}) center / cover`,
         padding: { xs: "30px 30px", md: "120px 130px 120px 210px" },
+        display: "flex",
       }}
     >
       <Box
@@ -77,6 +79,27 @@ const Map = () => {
           >
             Submit Now
           </Button>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          margin: "0 auto",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            color: "white",
+            padding: "10px",
+            backgroundColor: "#EF6D58",
+            textAlign: "center",
+            alignItems: "center",
+            borderRadius: "50%",
+            cursor: "pointer",
+          }}
+        >
+          <LocationOnIcon />
         </Box>
       </Box>
     </Box>
