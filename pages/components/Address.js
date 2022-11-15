@@ -115,7 +115,7 @@ const Address = () => {
           sx={{
             border: " 1px solid #F3D1BF",
             borderRadius: "6px 0px 0px 6px",
-            padding: "30px 170px 40px 38px",
+            padding: { xs: "30px 140px 40px 38px", md: "30px 170px 40px 38px" },
             margin: { xs: "0px 10px 40px 10px", md: "0px" },
           }}
         >

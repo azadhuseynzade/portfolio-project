@@ -83,7 +83,7 @@ const Map = () => {
       </Box>
       <Box
         sx={{
-          display: "flex",
+          display: { xs: "none", md: "flex" },
           margin: "0 auto",
           alignItems: "center",
         }}
